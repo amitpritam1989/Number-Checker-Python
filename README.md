@@ -12,6 +12,7 @@ A simple Python GUI application using Tkinter that checks various mathematical p
   - **Armstrong Number**: Checks if the sum of digits raised to the power of their count equals the number.
   - **Disarium Number**: Checks if the sum of digits raised to their positional power equals the number.
   - **Spy Number**: Checks if the sum and product of digits are equal.
+  - **Palindrome Number**: Checks if the number remains the same when reversed.
 
 ## Prerequisites
 Ensure you have **Python 3.x** installed on your system.
