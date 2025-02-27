@@ -44,6 +44,8 @@ def check_number():
     spy = 1  # Initialize spy number product as 1
     armstg = sum(int(digit) ** len(num_str) for digit in num_str)  # Armstrong number calculation
     disarum = sum(int(num_str[i]) ** (i + 1) for i in range(len(num_str)))  # Disarium number calculation
+        # --- Palindrome Number Check ---
+    palindrome = "Palindrome Number" if num_str == num_str[::-1] else "Not a Palindrome Number"
 
     # Calculate product of digits for Spy number check
     for digit in num_str:
@@ -57,6 +59,7 @@ def check_number():
     results += f"Perfect Number: {perfect}\n\n"
 
     results += f"Sum of digits: {total}\n"
+    results += f"{dup} is a {palindrome}\n"
 
     # Niven Number Check
     results += f"{dup} is a Niven Number\n" if dup != 0 and dup % total == 0 else f"{dup} is NOT a Niven Number\n"
